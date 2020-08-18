@@ -11,5 +11,5 @@
         "peacock.remoteColor": "#0078D7"
     },
     // Run Bash script in .devcontainer directory
-    "postCreateCommand": "apt-get update && apt-get install g++-9 gcc-9 gdb ninja-build zip rsync cmake -y"
+    "postCreateCommand": "sudo apt-get update && sudo apt-get install g++ gcc gdb ninja-build zip rsync cmake -y"
 }
