@@ -1,0 +1,15 @@
+{
+    // Open port 3000 by default
+    "appPort": 3000,
+    // Install ESLint and Peacock extensions
+    "extensions": [
+        "dbaeumer.vscode-eslint",
+        "johnpapa.vscode-peacock"
+    ],
+    // Set remote color for Peacock
+    "settings": {
+        "peacock.remoteColor": "#0078D7"
+    },
+    // Run Bash script in .devcontainer directory
+    "postCreateCommand": "apt-get update && apt-get install g++-9 gcc-9 gdb ninja-build zip rsync cmake -y"
+}
