@@ -1,15 +1,9 @@
 {
-    // Open port 3000 by default
-    "appPort": 3000,
-    // Install ESLint and Peacock extensions
+    // Install CMake Tools and C++ IntelliSense Extensions
     "extensions": [
-        "dbaeumer.vscode-eslint",
-        "johnpapa.vscode-peacock"
+        "ms-vscode.cmake-tools",
+        "ms-vscode.cpptools"
     ],
-    // Set remote color for Peacock
-    "settings": {
-        "peacock.remoteColor": "#0078D7"
-    },
-    // Run Bash script in .devcontainer directory
+    // Run script in .devcontainer directory
     "postCreateCommand": "sudo apt-get update && sudo apt-get install g++ gcc gdb ninja-build zip rsync cmake -y"
 }
