@@ -1,9 +1,3 @@
 {
-    // Install CMake Tools and C++ IntelliSense Extensions
-    "extensions": [
-        "ms-vscode.cmake-tools",
-        "ms-vscode.cpptools"
-    ],
-    // Run script in .devcontainer directory
-    "postCreateCommand": "sudo apt-get update && sudo apt-get install g++ gcc gdb ninja-build zip rsync cmake -y"
+  "postCreateCommand": "devinit init"
 }
