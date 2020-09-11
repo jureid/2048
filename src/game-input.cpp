@@ -49,7 +49,7 @@ bool check_input_vim(char c, intendedmove_t &intendedmove) {
 
 bool check_input_wasd(char c, intendedmove_t &intendedmove) {
   using namespace Keypress::Code;
-  switch (toupper(c)) {
+  switch (c) {
   case CODE_WASD_UP:
     intendedmove[FLAG_MOVE_UP] = true;
     return false;
